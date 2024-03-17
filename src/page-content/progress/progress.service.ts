@@ -29,7 +29,24 @@ export class ProgressService {
       }
     }
 
-    return null;
+    return this.emptyArticle();
+  }
+
+  emptyArticle() {
+    let article: ProgressArticle = {
+      title: {
+        title: "",
+        urlSegment: ""
+      },
+      sections: {
+        header: {
+          header: ""
+        },
+        content: []
+      }
+    }
+
+    return article;
   }
 
 }

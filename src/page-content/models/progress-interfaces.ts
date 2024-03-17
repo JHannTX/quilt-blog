@@ -5,7 +5,8 @@ export interface ProgressArticle {
 
 export interface ProgressTitle {
     title: string;
-    project?: string;
+    subTitle?: string
+    urlSegment: string;
 }
 
 export interface ProgressSections{

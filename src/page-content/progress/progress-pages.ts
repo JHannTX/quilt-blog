@@ -3,7 +3,8 @@ import { ProgressArticle } from "../models/progress-interfaces"
 export const progressPages: ProgressArticle[] = [
     {
         title: {
-            title: "derp"
+            title: "derp",
+            urlSegment: "derp"
         },
         sections: {
             header: {
