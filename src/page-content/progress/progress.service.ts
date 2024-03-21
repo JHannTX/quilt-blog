@@ -38,12 +38,12 @@ export class ProgressService {
         title: "",
         urlSegment: ""
       },
-      sections: {
+      sections: [{
         header: {
           header: ""
         },
         content: []
-      }
+      }]
     }
 
     return article;

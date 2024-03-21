@@ -4,9 +4,11 @@ export const progressPages: ProgressArticle[] = [
     {
         title: {
             title: "derp",
+            subTitle: "testing derp",
             urlSegment: "derp"
         },
-        sections: {
+        sections: [
+        {
             header: {
                 header: "derp"
             },
@@ -18,6 +20,6 @@ export const progressPages: ProgressArticle[] = [
                     paragraph: "derp again"
                 }
             ]
-        }
+        }]
     }
 ]

@@ -1,6 +1,6 @@
 export interface ProgressArticle {
     title: ProgressTitle;
-    sections: ProgressSections;
+    sections: ProgressSections[];
 }
 
 export interface ProgressTitle {
@@ -9,12 +9,12 @@ export interface ProgressTitle {
     urlSegment: string;
 }
 
-export interface ProgressSections{
+export interface ProgressSections {
     header: ProgressSectionHeader;
     content: ProgressSectionContent[];
 }
 
-export interface ProgressSectionHeader{
+export interface ProgressSectionHeader {
     header: string;
     description?: string;
 }
