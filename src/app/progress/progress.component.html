@@ -6,5 +6,8 @@
     <h4 *ngIf="!!section.header.description">{{section.header.description}}</h4>
     <div *ngFor="let content of section.content">
         <p>{{content.paragraph}}</p>
+        <div *ngIf="!!content.picture">
+            <img src="{{content.picture}}">
+        </div>
     </div>
 </div>

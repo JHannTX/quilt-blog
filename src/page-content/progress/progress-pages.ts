@@ -14,7 +14,8 @@ export const progressPages: ProgressArticle[] = [
             },
             content: [
                 {
-                    paragraph: "derp"
+                    paragraph: "derp",
+                    picture: "https://i.imgur.com/9jAkP7w.jpg"
                 },
                 {
                     paragraph: "derp again"
