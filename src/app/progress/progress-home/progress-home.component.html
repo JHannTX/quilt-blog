@@ -1,1 +1,8 @@
 <p>progress-home works!</p>
+
+<div>
+    <article-card 
+        *ngFor="let title of titles$ | async"
+        [title]="title">
+    </article-card>
+</div>
