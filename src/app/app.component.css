@@ -1,0 +1,23 @@
+header {
+    background-color: #37372F;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 10px;
+}
