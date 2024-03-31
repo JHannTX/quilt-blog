@@ -22,4 +22,5 @@ export interface ProgressSectionHeader {
 export interface ProgressSectionContent {
     paragraph: string;
     picture?: string;
+    // add alt text or create a picture object
 }
