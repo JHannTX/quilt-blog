@@ -3,6 +3,7 @@
 <div>
     <article-card 
         *ngFor="let title of titles$ | async"
-        [title]="title">
+        [title]="title"
+        (click)="onClick(title)">
     </article-card>
 </div>

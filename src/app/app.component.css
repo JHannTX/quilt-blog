@@ -1,3 +1,15 @@
+@font-face {
+    font-family: abuget;
+    src: url(src\assets\Abuget.ttf);
+}
+
+.title {
+    font-family: abuget;
+    color:  white;
+    margin-left: 10px;
+    font-size: xx-large;
+}
+
 header {
     background-color: #37372F;
     position: fixed;
