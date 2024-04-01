@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ProgressArticle, ProgressTitle} from '../models/progress-interfaces';
+import { Article, Title} from '../models/progress-interfaces';
 import { progressPages } from './progress-pages';
 import { of } from 'rxjs';
 
@@ -7,14 +7,14 @@ import { of } from 'rxjs';
   providedIn: 'root'
 })
 export class ProgressService {
-  private articles: ProgressArticle[] = progressPages;
+  private articles: Article[] = progressPages;
 
   fullPagesList() {
     return of(this.articles)
   }
 
   titleList() {
-    let list: ProgressTitle[] = [];
+    let list: Title[] = [];
     for(let page of this.articles) {
       list.push(page.title);
     }
@@ -33,7 +33,7 @@ export class ProgressService {
   }
 
   emptyArticle() {
-    let article: ProgressArticle = {
+    let article: Article = {
       title: {
         title: "",
         urlSegment: ""

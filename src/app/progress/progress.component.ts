@@ -1,6 +1,6 @@
 import { Component, type OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ProgressArticle } from 'src/page-content/models/progress-interfaces';
+import { Article } from 'src/page-content/models/progress-interfaces';
 import { ProgressService } from 'src/page-content/progress/progress.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { ProgressService } from 'src/page-content/progress/progress.service';
 })
 export class ProgressComponent implements OnInit {
   urlSegment: string = '';
-  page!: ProgressArticle;
+  page!: Article;
 
   // need to add routing to get which progress page we are going to
   constructor(private progressService: ProgressService, 

@@ -1,7 +1,7 @@
 import { Component, type OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { ProgressTitle } from 'src/page-content/models/progress-interfaces';
+import { Title } from 'src/page-content/models/progress-interfaces';
 import { ProgressService } from 'src/page-content/progress/progress.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { ProgressService } from 'src/page-content/progress/progress.service';
   styleUrls: ['./progress-home.component.css'],
 })
 export class ProgressHomeComponent implements OnInit {
-  titles$!: Observable<ProgressTitle[]>;
+  titles$!: Observable<Title[]>;
 
   constructor(private progressService: ProgressService,
     private router: Router,
@@ -20,7 +20,7 @@ export class ProgressHomeComponent implements OnInit {
     this.titles$ = this.progressService.titleList();
   }
 
-  onClick(title: ProgressTitle) {
+  onClick(title: Title) {
     this.router.navigate([title.urlSegment], {relativeTo: this.route})
   }
 }

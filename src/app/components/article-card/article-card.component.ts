@@ -1,5 +1,5 @@
 import { Component, Input, type OnInit } from '@angular/core';
-import { ProgressTitle } from 'src/page-content/models/progress-interfaces';
+import { Title } from 'src/page-content/models/progress-interfaces';
 
 @Component({
   selector: 'article-card',
@@ -7,7 +7,7 @@ import { ProgressTitle } from 'src/page-content/models/progress-interfaces';
   styleUrls: ['./article-card.component.css'],
 })
 export class ArticleCardComponent implements OnInit {
-    @Input() title!: ProgressTitle;
+    @Input() title!: Title;
 
     constructor() {}
 

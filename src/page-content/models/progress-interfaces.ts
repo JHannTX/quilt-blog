@@ -1,25 +1,25 @@
-export interface ProgressArticle {
-    title: ProgressTitle;
-    sections: ProgressSections[];
+export interface Article {
+    title: Title;
+    sections: Sections[];
 }
 
-export interface ProgressTitle {
+export interface Title {
     title: string;
     subTitle?: string
     urlSegment: string;
 }
 
-export interface ProgressSections {
-    header: ProgressSectionHeader;
-    content: ProgressSectionContent[];
+export interface Sections {
+    header: SectionHeader;
+    content: SectionContent[];
 }
 
-export interface ProgressSectionHeader {
+export interface SectionHeader {
     header: string;
     description?: string;
 }
 
-export interface ProgressSectionContent {
+export interface SectionContent {
     paragraph: string;
     picture?: string;
     // add alt text or create a picture object
