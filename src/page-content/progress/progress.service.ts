@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Article, Title} from '../models/progress-interfaces';
+import { Article, Title} from '../models/article-interfaces';
 import { progressPages } from './progress-pages';
 import { of } from 'rxjs';
 

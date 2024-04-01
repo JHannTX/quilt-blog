@@ -1,4 +1,4 @@
-import { Article } from "../models/progress-interfaces"
+import { Article } from "../models/article-interfaces"
 
 export const progressPages: Article[] = [
     {

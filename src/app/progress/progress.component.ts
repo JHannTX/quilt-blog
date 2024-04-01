@@ -1,6 +1,6 @@
 import { Component, type OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Article } from 'src/page-content/models/progress-interfaces';
+import { Article } from 'src/page-content/models/article-interfaces';
 import { ProgressService } from 'src/page-content/progress/progress.service';
 
 @Component({

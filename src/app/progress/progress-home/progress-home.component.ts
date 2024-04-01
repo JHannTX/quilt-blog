@@ -1,7 +1,7 @@
 import { Component, type OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { Title } from 'src/page-content/models/progress-interfaces';
+import { Title } from 'src/page-content/models/article-interfaces';
 import { ProgressService } from 'src/page-content/progress/progress.service';
 
 @Component({
