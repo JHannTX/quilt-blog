@@ -24,7 +24,7 @@ export class ProgressService {
 
   page(title: string) {
     for(let page of this.articles) {
-      if(page.title.title === title) {
+      if(page.title.urlSegment === title) {
         return page;
       }
     }

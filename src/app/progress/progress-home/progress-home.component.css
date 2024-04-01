@@ -1,3 +1,8 @@
 :host {
   display: block;
 }
+
+h1 {
+  font-family: abuget;
+  font-size: 4em;
+}
