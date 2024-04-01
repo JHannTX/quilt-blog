@@ -1,0 +1,11 @@
+<h1>Random Thoughts</h1>
+
+<p>Here you will find articles that have absolutely nothing to do with quilting.</p>
+
+<div>
+    <article-card 
+        *ngFor="let title of titles$ | async"
+        [title]="title"
+        (click)="onClick(title)">
+    </article-card>
+</div>
