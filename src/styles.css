@@ -5,6 +5,21 @@
     src: url(src\assets\Abuget.ttf);
 }
 
+@font-face {
+    font-family: wizza;
+    src: url(src\assets\wizzta.ttf);
+}
+
+@font-face {
+    font-family: simplePrint;
+    src: url(src\assets\SimplePrint.ttf);
+}
+
+@font-face {
+    font-family: simplePrintBold;
+    src: url(src\assets\SimplePrintBold.ttf);
+}
+
 body {
     background-color: #F2F1ED;
     margin-top: 55px;

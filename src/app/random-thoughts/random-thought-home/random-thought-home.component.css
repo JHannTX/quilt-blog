@@ -1,4 +1,10 @@
 h1 {
     font-family: abuget;
     font-size: 4em;
+    margin-bottom: 25px;
+  }
+  
+  p {
+    font-family: Helvetica, Arial, sans-serif;
+    margin-bottom: 25px;
   }
