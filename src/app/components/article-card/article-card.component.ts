@@ -1,5 +1,5 @@
 import { Component, Input, type OnInit } from '@angular/core';
-import { Title } from 'src/page-content/models/progress-interfaces';
+import { Title } from 'src/page-content/models/article-interfaces';
 
 @Component({
   selector: 'article-card',

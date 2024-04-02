@@ -1,19 +1,19 @@
 import { Component, type OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Article } from 'src/page-content/models/article-interfaces';
-import { ProgressService } from 'src/page-content/progress/progress.service';
+import { RandomThoughtService } from 'src/page-content/random-thoughts/random-thoughts.service';
 
 @Component({
-  selector: 'app-progress',
-  templateUrl: './progress.component.html',
-  styleUrls: ['./progress.component.css']
+  selector: 'app-random-thought',
+  templateUrl: './random-thought.component.html',
+  styleUrls: ['./random-thought.component.css']
 })
-export class ProgressComponent implements OnInit {
+export class RandomThoughtComponent implements OnInit {
   urlSegment: string = '';
   page!: Article;
 
   // need to add routing to get which progress page we are going to
-  constructor(private progressService: ProgressService, 
+  constructor(private randomThoughtService: RandomThoughtService, 
     private route: ActivatedRoute) {}
 
   ngOnInit(): void { 
@@ -27,7 +27,7 @@ export class ProgressComponent implements OnInit {
   }
 
   setUpContent() {
-    this.page = this.progressService.page(this.urlSegment);
+    this.page = this.randomThoughtService.page(this.urlSegment);
   }
 
 }

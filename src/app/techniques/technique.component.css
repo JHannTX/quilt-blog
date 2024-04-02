@@ -1,0 +1,11 @@
+img {
+    max-height: 500px;
+    max-width: 1250px;
+  }
+  
+  h1 {
+    font-family: abuget;
+    font-size: 3.7em;
+    font-weight: lighter;
+    padding-top: 15px;
+  }

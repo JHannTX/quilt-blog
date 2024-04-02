@@ -1,0 +1,13 @@
+<h1>{{page.title.title}}</h1>
+<h2 *ngIf="!!page.title.subTitle">{{page.title.subTitle}}</h2>
+
+<div *ngFor="let section of page.sections">
+    <h3>{{section.header.header}}</h3>
+    <h4 *ngIf="!!section.header.description">{{section.header.description}}</h4>
+    <div *ngFor="let content of section.content">
+        <p>{{content.paragraph}}</p>
+        <div *ngIf="!!content.picture">
+            <img src="{{content.picture}}">
+        </div>
+    </div>
+</div>

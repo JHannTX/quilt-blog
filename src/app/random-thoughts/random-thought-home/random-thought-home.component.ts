@@ -2,22 +2,22 @@ import { Component, type OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Title } from 'src/page-content/models/article-interfaces';
-import { ProgressService } from 'src/page-content/progress/progress.service';
+import { RandomThoughtService } from 'src/page-content/random-thoughts/random-thoughts.service';
 
 @Component({
-  selector: 'progress-home',
-  templateUrl: './progress-home.component.html',
-  styleUrls: ['./progress-home.component.css'],
+  selector: 'random-thought-home',
+  templateUrl: './random-thought-home.component.html',
+  styleUrls: ['./random-thought-home.component.css'],
 })
-export class ProgressHomeComponent implements OnInit {
+export class RandomThoughtHomeComponent implements OnInit {
   titles$!: Observable<Title[]>;
 
-  constructor(private progressService: ProgressService,
+  constructor(private randomThoughtService: RandomThoughtService,
     private router: Router,
     private route: ActivatedRoute) {}
 
   ngOnInit(): void { 
-    this.titles$ = this.progressService.titleList();
+    this.titles$ = this.randomThoughtService.titleList();
   }
 
   onClick(title: Title) {

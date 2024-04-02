@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Article, Title} from '../models/article-interfaces';
-import { progressPages } from './progress-pages';
 import { of } from 'rxjs';
+import { techniquePages } from './technique-pages';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ProgressService {
-  private articles: Article[] = progressPages;
+export class TechniqueService {
+  private articles: Article[] = techniquePages;
 
   fullPagesList() {
     return of(this.articles)
