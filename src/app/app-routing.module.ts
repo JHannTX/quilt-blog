@@ -6,6 +6,8 @@ import { ProgressHomeComponent } from './progress/progress-home/progress-home.co
 import { HomeComponent } from './home/home.component';
 import { RandomThoughtComponent } from './random-thoughts/random-thought.component';
 import { RandomThoughtHomeComponent } from './random-thoughts/random-thought-home/random-thought-home.component';
+import { TechniqueComponent } from './techniques/technique.component';
+import { TechniqueHomeComponent } from './techniques/technique-home/technique-home.component';
 
 const routes: Routes = [
   {
@@ -27,6 +29,14 @@ const routes: Routes = [
   {
     path: 'random-thought',
     component: RandomThoughtHomeComponent
+  },
+  {
+    path: 'technique/:urlSegment',
+    component: TechniqueComponent
+  },
+  {
+    path: 'technique',
+    component: TechniqueHomeComponent
   },
   {
     path: 'home',

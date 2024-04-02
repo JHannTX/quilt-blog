@@ -9,6 +9,8 @@ import { ArticleCardComponent } from './components/article-card/article-card.com
 import { HomeComponent } from './home/home.component';
 import { RandomThoughtComponent } from './random-thoughts/random-thought.component';
 import { RandomThoughtHomeComponent } from './random-thoughts/random-thought-home/random-thought-home.component';
+import { TechniqueComponent } from './techniques/technique.component';
+import { TechniqueHomeComponent } from './techniques/technique-home/technique-home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { RandomThoughtHomeComponent } from './random-thoughts/random-thought-hom
     ArticleCardComponent,
     HomeComponent,
     RandomThoughtComponent,
-    RandomThoughtHomeComponent
+    RandomThoughtHomeComponent,
+    TechniqueComponent,
+    TechniqueHomeComponent
   ],
   imports: [
     BrowserModule,

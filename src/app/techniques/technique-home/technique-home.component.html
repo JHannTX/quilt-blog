@@ -1,0 +1,11 @@
+<h1>Techniques</h1>
+
+<p>Here you will find articles about different quilting techniques.</p>
+
+<div>
+    <article-card 
+        *ngFor="let title of titles$ | async"
+        [title]="title"
+        (click)="onClick(title)">
+    </article-card>
+</div>
