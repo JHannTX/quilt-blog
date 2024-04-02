@@ -11,6 +11,7 @@ import { RandomThoughtComponent } from './random-thoughts/random-thought.compone
 import { RandomThoughtHomeComponent } from './random-thoughts/random-thought-home/random-thought-home.component';
 import { TechniqueComponent } from './techniques/technique.component';
 import { TechniqueHomeComponent } from './techniques/technique-home/technique-home.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TechniqueHomeComponent } from './techniques/technique-home/technique-ho
     RandomThoughtComponent,
     RandomThoughtHomeComponent,
     TechniqueComponent,
-    TechniqueHomeComponent
+    TechniqueHomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

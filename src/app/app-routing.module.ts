@@ -8,6 +8,7 @@ import { RandomThoughtComponent } from './random-thoughts/random-thought.compone
 import { RandomThoughtHomeComponent } from './random-thoughts/random-thought-home/random-thought-home.component';
 import { TechniqueComponent } from './techniques/technique.component';
 import { TechniqueHomeComponent } from './techniques/technique-home/technique-home.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'technique',
     component: TechniqueHomeComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
   },
   {
     path: 'home',
