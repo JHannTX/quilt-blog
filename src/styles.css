@@ -6,7 +6,7 @@
 }
 
 @font-face {
-    font-family: wizza;
+    font-family: wizzta;
     src: url(src\assets\wizzta.ttf);
 }
 
@@ -18,6 +18,11 @@
 @font-face {
     font-family: simplePrintBold;
     src: url(src\assets\SimplePrintBold.ttf);
+}
+
+@font-face {
+    font-family: misterOctober;
+    src: url(src\assets\MisterOctober.ttf);
 }
 
 body {
