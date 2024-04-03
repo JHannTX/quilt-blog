@@ -43,5 +43,26 @@ export const progressPages: Article[] = [
                 ]
             }
         ]
-    }
+    },
+    {
+        title: {
+            title: "Testing no subtitle",
+            urlSegment: "subtitle"
+        },
+        sections: [
+        {
+            header: {
+                header: "derp"
+            },
+            content: [
+                {
+                    paragraph: "derp",
+                    picture: "https://i.imgur.com/9jAkP7w.jpg"
+                },
+                {
+                    paragraph: "derp again"
+                }
+            ]
+        }]
+    },
 ]

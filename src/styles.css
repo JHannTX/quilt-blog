@@ -5,6 +5,26 @@
     src: url(src\assets\Abuget.ttf);
 }
 
+@font-face {
+    font-family: wizzta;
+    src: url(src\assets\wizzta.ttf);
+}
+
+@font-face {
+    font-family: simplePrint;
+    src: url(src\assets\SimplePrint.ttf);
+}
+
+@font-face {
+    font-family: simplePrintBold;
+    src: url(src\assets\SimplePrintBold.ttf);
+}
+
+@font-face {
+    font-family: misterOctober;
+    src: url(src\assets\MisterOctober.ttf);
+}
+
 body {
     background-color: #F2F1ED;
     margin-top: 55px;

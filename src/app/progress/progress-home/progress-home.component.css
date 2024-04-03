@@ -5,4 +5,11 @@
 h1 {
   font-family: abuget;
   font-size: 4em;
+  margin-bottom: 25px;
+  font-weight: normal;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  margin-bottom: 25px;
 }
