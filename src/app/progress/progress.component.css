@@ -2,8 +2,12 @@
   display: block;
 }
 
+#header {
+  padding-top: 55px;
+}
+
 img {
-  max-height: 475px;
+  max-height: 400px;
   max-width: 1250px;
 }
 
@@ -16,21 +20,24 @@ h1 {
   font-family: abuget;
   font-size: 3.7em;
   font-weight: lighter;
-  padding-top: 15px;
-  margin-bottom: 15px;
+  display: inline;
+  padding-right: 25px;
 }
 
 h2 {
   font-family: simplePrint;
   font-weight: normal;
   font-size: 1.8em;
+  display: inline;
 }
 
 h3 {
   font-family: abuget;
-  font-size: 2.3em;
+  font-size: 2.7em;
   font-weight: normal;
   margin: 15px auto;
+  display: inline;
+  margin-right: 20px;
 }
 
 h4 {
@@ -38,6 +45,11 @@ h4 {
   font-weight: normal;
   font-size: 1.5em;
   margin: 15px auto;
+  display: inline;
+}
+
+.inline {
+  display: inline;
 }
 
 .small-divider {
@@ -58,4 +70,13 @@ h4 {
   width: 100%;
   border-top: 4px solid #9d8189;
   margin: 20px auto;
+}
+
+.dot-divider {
+  height: 20px;
+  width: 20px;
+  background-color: #c585b3;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px;
 }

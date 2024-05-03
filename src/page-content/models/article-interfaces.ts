@@ -20,7 +20,7 @@ export interface SectionHeader {
 }
 
 export interface SectionContent {
-    paragraph: string;
+    paragraph?: string;
     picture?: string;
     // add alt text or create a picture object
 }
