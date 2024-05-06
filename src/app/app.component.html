@@ -2,11 +2,21 @@
   <p class="title">Ele15 Quilts</p>
   <nav>
       <ul>
-          <li><a [routerLink]="'home'">Home</a></li>
-          <li><a [routerLink]="'progress'">Progress</a></li>
-          <li><a [routerLink]="'random-thought'">Random Thoughts</a></li>
-          <li><a [routerLink]="'technique'">Techniques</a></li>
-          <li><a [routerLink]="'about'">About</a></li>
+          <li><a [routerLink]="'home'" class="link">Home</a></li>
+          <!-- <li><a [routerLink]="'progress'">Progress</a></li> -->
+          <li class="dropdown">
+            <a class="dropbtn link">
+              Projects <div class="triangle"></div>
+            </a>
+            <div class="dropdown-content">
+              <a [routerLink]="'progress'">Current Progress</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+          <li><a [routerLink]="'random-thought'" class="link">Random Thoughts</a></li>
+          <li><a [routerLink]="'technique'" class="link">Techniques</a></li>
+          <li><a [routerLink]="'about'" class="link">About</a></li>
       </ul>
   </nav>
 </header>
