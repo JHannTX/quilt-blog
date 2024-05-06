@@ -11,13 +11,27 @@ import { ProgressService } from 'src/page-content/progress/progress.service';
 })
 export class ProgressHomeComponent implements OnInit {
   titles$!: Observable<Title[]>;
+  private title: string = 'progress';
 
   constructor(private progressService: ProgressService,
     private router: Router,
     private route: ActivatedRoute) {}
 
   ngOnInit(): void { 
-    this.titles$ = this.progressService.titleList();
+    this.route.title
+    .subscribe((title) => {
+      if(title!!) {
+        this.title = title;
+      }
+    });
+
+    if(this.title === 'progress') {
+      this.titles$ = this.progressService.progressTitleList();
+    } else if(this.title === 'completed') {
+      this.titles$ = this.progressService.completedTitleList();
+    } else if(this.title === 'designing') {
+      this.titles$ = this.progressService.designingTitleList();
+    }
   }
 
   onClick(title: Title) {

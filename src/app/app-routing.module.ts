@@ -17,11 +17,33 @@ const routes: Routes = [
   },
   {
     path: 'progress/:urlSegment',
-    component: ProgressComponent
+    component: ProgressComponent,
+    title: 'progress'
   },
   {
     path: 'progress',
-    component: ProgressHomeComponent
+    component: ProgressHomeComponent,
+    title: 'progress'
+  },
+  {
+    path: 'completed/:urlSegment',
+    component: ProgressComponent,
+    title: 'completed'
+  },
+  {
+    path: 'completed',
+    component: ProgressHomeComponent,
+    title: 'completed'
+  },
+  {
+    path: 'designing/:urlSegment',
+    component: ProgressComponent,
+    title: 'designing'
+  },
+  {
+    path: 'designing',
+    component: ProgressHomeComponent,
+    title: 'designing'
   },
   {
     path: 'random-thought/:urlSegment',

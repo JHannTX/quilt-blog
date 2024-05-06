@@ -11,23 +11,40 @@ import { ProgressService } from 'src/page-content/progress/progress.service';
 export class ProgressComponent implements OnInit {
   urlSegment: string = '';
   page!: Article;
+  title: string = 'progress';
 
   // need to add routing to get which progress page we are going to
   constructor(private progressService: ProgressService, 
     private route: ActivatedRoute) {}
 
   ngOnInit(): void { 
+    this.route.title
+      .subscribe((title) => {
+        if(title!!) {
+          this.title = title;
+          console.log('Title', this.title);
+        }
+      });
+
     this.route.paramMap
       .subscribe((params) => {
         if(params.has('urlSegment')) {
           this.urlSegment = params.get('urlSegment')!;
           this.setUpContent();
+          console.log('Param Map', this.title);
         }
       });
   }
 
   setUpContent() {
-    this.page = this.progressService.page(this.urlSegment);
+    console.log('Set Up', this.title);
+    if(this.title === 'progress') {
+      this.page = this.progressService.progressPage(this.urlSegment);
+    } else if(this.title === 'completed') {
+      this.page = this.progressService.completedPage(this.urlSegment);
+    } else if(this.title === 'designing') {
+      this.page = this.progressService.designingPage(this.urlSegment);
+    }
   }
 
 }
